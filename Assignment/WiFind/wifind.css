@@ -1,0 +1,1391 @@
+/*********************************************/
+		/* General Web Page Structure */
+/*********************************************/
+
+/*Default screen resolution 1920x1080*/
+
+/* HTML body */
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	background-color: white;
+}
+
+#main-container 
+{
+	min-height: 100%;
+	position: relative;
+}
+
+/*********************************************/
+
+/* Footer */
+#footer {
+	height: 100px;
+	width: 100%;
+	background-color: #0088FE;
+	box-shadow: 0 50vh 0 50vh #0088FE; /* Extends footer's colour */
+	text-align: center;
+	bottom: 0;
+}
+
+#footer-inner 
+{ 
+	margin:auto; 
+	text-align:center; 
+	padding:12px; 
+	width:922px;
+}
+
+#footer a 
+{
+	color:white;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+.bar {
+	top: 0;
+	width: 100%;
+	height: 25px;
+	background-color: orange;
+}
+
+/*********************************************/
+
+/* Navigation bar */
+
+.navbar {
+ 
+  height: 80px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #0088FE;
+ 
+  margin-left: 18%;
+  padding-left: 2%;
+  padding-right: 2%;
+	
+}
+
+.header {
+	
+	background: #0088FE;
+}
+
+.nav-logo
+{
+	float: left;
+	background-color: #0088FE;
+	margin-top: 15px;
+}
+
+/* Groups all the nav elements */
+
+#search-container{
+	float:left;
+	 position: absolute;
+    display:inline-block;
+	margin-left: 25px;
+	margin-top: 20px;
+	width: 620px;
+	padding-left: 15px;
+	border-radius: 25px;
+	background-color: white;
+}
+
+/* Search bar */
+
+.searchFind{
+	float:left;
+	padding-left: 10px;
+	width: 40%;
+	border-style: none;
+}
+
+/* Dropdown list */
+
+.searchSuburb{
+	float:left;
+	padding-left: 10px;
+	width: 50%;
+	border-style: none;
+	border-radius: 25px;
+	border-left: 1px solid gray;
+}
+
+/* Search button */
+
+.searchButton{
+	float: right;
+	width: 10%;
+	height: 35px;
+	border-style: none;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	border-top-right-radius: 12.5px;
+	border-bottom-right-radius: 12.5px;
+}
+
+/* Removes border of dropdown */
+
+select[class="searchSuburb"] {
+  
+  border-radius: 0;
+
+}
+
+/* Removes search bar border */
+
+input[class="searchFind"], select, textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+input[class="searchFind"],  select[class="searchSuburb"]
+{
+    height:35px;
+}
+
+/* Design nav buttons */
+
+.login
+{
+	background-color: #0088FE;
+	margin-top: 15px;
+	padding: 14px 18px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 940px;
+}
+
+.profile
+{
+	background-color: #0088FE;
+	margin-top: 15px;
+	padding: 14px 18px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 900px;
+	white-space:nowrap;
+}
+
+.signup
+{
+	background-color: #0f6fff;
+	margin-top: 15px;
+	padding: 14px 24px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 25px;
+	position: absolute;
+	margin-left: 1030px;
+}
+
+.signup:hover:not(.active) {
+    background-color: orange;
+}
+.login:hover:not(.active) {
+	border-bottom: 2px solid orange;
+}
+.profile:hover:not(.active) {
+	border-bottom: 2px solid orange;
+}
+
+.searchButton:hover:not(.active) {
+	background-color: orange;
+}
+
+/*********************************************/
+				/* Search Page */
+/*********************************************/
+#main-content {
+	
+	padding: 350px;
+}
+/* Background image */
+#background 
+{
+	background: url("./images/background.jpg"); 
+	
+	 /* Full height */
+    height: 100%; 
+	padding-bottom: 120px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Home page nav buttons */
+#homeHeader {
+	padding-top: 30px;
+	width: 80%;
+	padding-left: 10%;
+}
+
+#nav a {
+	height: 25px;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+	color: white;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 25px;
+	text-decoration: none;
+	margin: 3px;
+	float: right;
+}
+
+#nav a:hover {
+	background-color: white;
+	text-decoration: none;
+	color: blue;
+}
+
+/* Groups three different bars */
+
+#form_group1
+{
+	font-weight: bold;
+	display: inline-block;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: white;
+	padding: 4px;
+	color: black;
+	background-color: white;
+	
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 100px;
+	
+	width: 350px;
+	height: 25px;
+}
+#form_group2
+{
+	font-weight: bold;
+	display: inline-block;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: white;
+	padding: 4px;
+	color: black;
+	background-color: white;
+	
+	position: absolute;
+	margin-left: 450px;
+	margin-top: 100px;
+	
+	width: 350px;
+	height: 25px;
+}
+#form_group3
+{
+	font-weight: bold;
+	
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: white;
+	padding: 4px;
+	background-color: white;
+	position: absolute;
+	margin-left: 850px;
+	margin-top: 100px;
+	
+	width: 350px;
+	height: 25px;
+}
+
+#form_group3 span {
+		width: 25px;
+		height: 25px;
+	}
+	
+	#form_group3 select {
+		float: right;
+	}
+
+	#form_group3 span.checked {
+		color: orange;
+}
+
+#search {
+	background-color: #0088FE;
+	font-weight: bold;
+	color: white;
+	border-color: #0088FE;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 25px;
+	font-size: 18px;
+	
+	position: absolute;
+	margin-left: 580px;
+	margin-top: 200px;
+	
+}
+
+input[name="place"]
+{
+	border-style: none;
+}
+
+/* Removes suburb dropdown border */
+.suburb
+{
+	border:0px;
+}
+
+/* Makes the Current Location option blue */
+#current
+{
+	color: blue;
+}
+
+/* A 5 star rating bar */
+.rating {
+    width: 220px;
+	padding-right: 5px;
+}
+
+.rating span { 
+	float: right;
+	position: relative; 
+}
+
+.rating span input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+	cursor: pointer;
+}
+
+.rating span label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background: lightgray;
+    margin-right: 2px;
+    border-radius: 50%;
+}
+
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    background: orange;
+}
+/* Logo subtitle */
+
+#subtitle {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	
+	
+	position: absolute;
+	margin-left: 450px;
+	white-space: nowrap;
+}
+
+/* Logo image configuration */
+
+#logo img {
+	height: 100px;
+	width: 200px;
+	padding-bottom: 20px;
+	
+	position: absolute;
+	margin-top: -120px;
+	margin-left: 530px;
+}
+
+/*********************************************/
+			/* Results Page */
+/*********************************************/
+
+/* Body content */
+.resultsPageInfo {
+	
+	background-color: #EAEDED;
+	width: 60%;
+	margin-left: 20%;
+	padding-top: 2%;s
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 200px;
+}
+
+/* Nav list styled */
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+/*************************************/
+
+/*fix bug*/
+#bug-fix{
+	display: none;
+}
+
+#ratingResult {
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 5px;
+	color: black;
+	border: 1px solid orange;
+	width: 50px;
+	height: 20px;
+	margin: 0px auto;
+}
+
+#ratingResult span.checked {
+	color: orange;
+}
+
+#result-title
+{
+	text-align: center;
+}
+
+input[name=review]
+{
+	background-color: #0f6fff;
+	
+	color: white;
+	font-weight: bold;
+	border-radius: 15px;
+	height: 50px;
+	width: 150px;
+	border:none
+}
+
+#review:hover:not(.active) {
+	background-color: orange;
+}
+
+
+/* Page numbering bar */
+.currentPage {
+    color: white;
+	font-weight: bold;
+	padding: 8px 16px;
+	border: 1px solid black;
+	background-color: orange;
+}
+
+#pageNo {
+	text-align:center;
+	padding-bottom: 40px;
+}
+
+.pagination {
+	color: black;
+	font-weight: bold;
+    padding: 8px 16px;
+	border: 1px solid black;
+}
+
+.pagination:hover
+{
+	background-color: #ffc966;
+}
+
+.item  
+	{
+		border-spacing:0;
+		margin: 0px auto;
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+	}
+	
+.item th
+{
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 5px;
+		
+	border-bottom-style:solid;
+	
+	border-width:2px;
+	border-color:black;
+}
+	
+.img, .item .item-description
+{
+	text-align:center;
+	position: relative;
+	float: left;
+	width:  300px;
+	height: 300px;	
+}
+	
+#results
+{
+	background-color:  #EAEDED;
+}
+	
+#left-section
+{
+
+}
+	
+#right-section
+{
+		
+}
+
+
+/*************************************/
+
+/* Display map in container 2*/
+#mapid
+{ 
+	width: 80%; 
+	height: 300px; 
+	display:block;
+    top:0;
+    left:0;
+	position: relative; 
+	outline: medium none;
+	margin-left: 10%;
+	margin-bottom: 30px;
+}
+
+/*********************************************/
+		/* User Registration Page*/
+/*********************************************/
+
+/* Form title */
+#heading {
+	
+	text-align: center;
+	max-width:400px;
+	margin:0 auto;
+}
+
+/* Removes form border */
+fieldset[id="form-border"]
+{
+	border-style: none;
+}
+
+/* Form container */
+#registration
+{
+	float: left;
+	width: 500px;
+}
+
+/* Image size */
+.image {
+   height: 500px;
+   width: 500px;
+   border-radius: 50%;
+}
+
+/* Email and passwords fields */
+input[name="username"], 
+	 [name="signup"], 
+	 [name="email"], 
+	 [name="password"], 
+	 [name="confirm-password"]
+{
+  width: 380px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid silver;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+#gender-label {
+	 padding-left: 10px ;
+}
+
+
+a {text-decoration: none; }
+
+/* Group most of the fields together */
+#form-group
+{
+	float: left;
+	margin-left:35px;
+	margin-bottom: 20px;
+}
+
+/* To login, click here */
+#note
+{
+	float: right;
+	margin-right: 45px;
+}
+
+#click
+{
+	text-decoration: none;
+}
+
+/* Register button */
+input[value="Register"] 
+{
+    width: 80%;
+    height: 40px;
+	border-radius: 25px;
+    display: block;
+	border: none;
+    background-color: #0088FE;
+    color: white;
+	margin:0px auto;
+	margin-bottom: 10px;
+}
+
+#register:hover:not(.active) {
+	background-color: orange;
+}
+/* Unique navbar with logo inside*/
+.wraptocenter {
+  
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #0088FE;
+  height: 80px;
+  width: 1%;
+  
+}
+
+/* Groups form and image together */
+.registration-content 
+{
+	width: 1000px;
+	padding-top: 100px;
+	padding-bottom: 180px;
+	margin: 0 auto;
+}
+
+/* ERROR CSS FOR JAVASCRIPT */
+#error,
+#error-name, 
+#error-email, 
+#error-password, 
+#error-confirm-password
+{
+	color:red;
+}
+/*********************************************/
+			/* Login Page */
+/*********************************************/
+
+#login-wrapper {
+    margin: 0 auto; /* to make the div center align to the browser */
+    padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 150px;
+    width: 415px; /* set it to anything */
+    text-align: left;
+	padding-bottom: 280px;
+}
+
+#login-wrapper h2 {
+	text-align: center;
+}
+
+input[value="Login"] 
+{
+	width: 80%;
+    height: 40px;
+	border-radius: 25px;
+    display: block;
+	border: none;
+    background-color: #0088FE;
+    color: white;
+	margin:0px auto;
+	margin-top: 30px;
+}
+
+/*********************************************/
+			/* Individual Page */
+/*********************************************/
+
+/* Body content for first info */
+.individualPageInfo {
+	width: 60%;
+	margin-left: 20%;
+	padding: 2%;
+	text-align: left;
+	border: 1px solid black;
+	margin-top: 50px;
+	background-color: #EAEDED;
+}
+
+/* Body content for second info */
+.individualPageInfo2 {
+	width: 60%;
+	margin-left: 20%;
+	padding: 2%;
+	text-align: left;
+	margin-top: 20px;
+	padding-bottom: 150px; /* Counter footer height overlap */
+	border: 1px solid black;
+	background-color: #EAEDED;
+}
+
+/* Body content for second info */
+#placeImage {
+	height: 50%;
+	width: 50%;
+	margin-left: 25%;
+	border-radius: 15px;
+}
+
+/* User ratings */
+#rating {
+	font-weight: bold;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: white;
+	color: black;
+	background-color: white;
+	width: 145px;
+	height: 25px;
+}
+
+/* Remove coordinates on screen */
+.lat {
+	display: none;
+}
+
+.long {
+	display: none;
+}
+
+#latR {
+	display: none;
+}
+
+#longR {
+	display: none;
+}
+
+#mapReview {
+	width: 100%; 
+	height: 300px; 
+	display:block;
+    top:0;
+    left:0;
+	position: relative; 
+	outline: medium none;
+}
+
+/* Setup review boards */
+#reviewTable td{
+	background-color: white;
+	border: 3px solid black;
+}
+
+#reviewTable table{
+	border-collapse: collapse;
+}
+
+#reviewTable h4, p {
+	padding-left: 10px;
+}
+
+#review_reviewpage
+{
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px;
+	font-weight: bold;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+
+/* User profile picture */
+#profile {
+	width: 75px;
+	height: 75px;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-right: 30px;
+	border-radius: 10px;
+}
+
+/* Review content */
+#posted {
+	text-align: right;
+}
+
+#submitReview {
+	float: right;
+	margin: 3px;
+	display: block;
+}
+
+#review textarea{
+	margin: 5px;
+	width: 90%;
+}
+
+#ratingReview {
+	font-weight: bold;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: white;
+	color: black;
+	background-color: white;
+	width: 50px;
+	height: 20px;
+}
+
+#ratingReview span {
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+
+#ratingReview span.checked {
+	color: orange;
+}
+
+#user_rating {
+	display: inline-block;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: white;
+	background-color: white;
+	width: 135px;
+	height: 25px;
+	margin-left: 10px;
+}
+
+/*********************************************/
+			/* Profile Page */
+/*********************************************/
+.card {
+    max-width: 300px;
+    margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.userLogout {
+  
+	background-color: #0f6fff;
+	padding: 14px 100px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 25px;
+}
+
+.userLogout:hover:not(.active) {
+    background-color: red;
+}
+
+/*********************************************/
+
+/*SCREEN RESOLUTION SIZES*/
+/*Laptop size 1368 x 912*/
+@media only screen and (max-width: 1368px) 
+{
+	
+	/* Groups all the nav elements */
+
+	#search-container{
+		
+		width: 500px;
+	}
+
+	/* Search bar */
+
+	.searchFind{
+		width: 40%;
+	}
+
+	/* Dropdown list */
+
+	.searchSuburb{
+		width: 45%;
+	}
+
+	/* Search button */
+
+	.searchButton
+	{
+		width: 15%;
+	}
+
+	/* Design nav buttons */
+
+	.login
+	{
+		margin-left: 590px;
+	}
+	
+	.profile
+	{
+		margin-left: 560px;
+	}
+
+	.signup
+	{
+		margin-left: 680px;
+	}
+	
+	/*********************************************/
+					/* Search Page */
+	/*********************************************/
+	
+
+	/* Groups three different bars */
+
+	#form_group1
+	{
+		font-weight: bold;
+		display: inline-block;
+		border-style: solid;
+		border-width: 5px;
+		border-radius: 10px;
+		border-color: white;
+		padding: 4px;
+		color: black;
+		background-color: white;
+		
+		position: absolute;
+		margin-left: -250px;
+		margin-top: 100px;
+		
+		width: 350px;
+		height: 25px;
+	}
+	#form_group2
+	{
+		font-weight: bold;
+		display: inline-block;
+		border-style: solid;
+		border-width: 5px;
+		border-radius: 10px;
+		border-color: white;
+		padding: 4px;
+		color: black;
+		background-color: white;
+		
+		position: absolute;
+		margin-left: 150px;
+		margin-top: 100px;
+		
+		width: 350px;
+		height: 25px;
+	}
+	#form_group3
+	{
+		font-weight: bold;
+		
+		border-style: solid;
+		border-width: 5px;
+		border-radius: 10px;
+		border-color: white;
+		padding: 4px;
+		color: black;
+		background-color: white;
+		
+		position: absolute;
+		margin-left: 550px;
+		margin-top: 100px;
+		
+		width: 350px;
+		height: 25px;
+	}
+
+
+	#search {
+		background-color: #0088FE;
+		font-weight: bold;
+		color: white;
+		border-color: #0088FE;
+		border-style: solid;
+		border-width: 4px;
+		border-radius: 25px;
+		font-size: 18px;
+		
+		position: absolute;
+		margin-left: 280px;
+		margin-top: 200px;
+		
+	}
+
+	/* Logo subtitle */
+
+	#subtitle {
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size: 24px;
+		
+		
+		position: absolute;
+		margin-left: 150px;
+		white-space: nowrap;
+	}
+
+	/* Logo image configuration */
+
+	#logo img {
+		height: 100px;
+		width: 200px;
+		padding-bottom: 20px;
+		
+		position: absolute;
+		margin-top: -120px;
+		margin-left: 230px;
+	}
+	
+}
+
+/*Phone size 320 x 480*/
+@media only screen and (max-width: 320px) 
+{
+	
+	/* Footer */
+
+	#footer-inner 
+	{ 
+		text-align:center; 
+		padding:0px; 
+		width:250px;
+	}
+	
+	/* Navigation bar */
+
+	.navbar {
+	  
+	  height: 320px;
+	  background-color: #0088FE;
+		
+	}
+
+	.header {
+		
+		background-color: #0088FE;
+	}
+
+	.nav-logo
+	{
+		float: left;
+		background-color: #0088FE;
+		margin-top: 15px;
+		margin-left: 30px;
+	}
+
+	/* Groups all the nav elements */
+
+	#search-container{
+		float:none;
+		position: absolute;
+		margin-left: -150px;
+		margin-top: 140px;
+		width: 220px;
+		padding-left: 0px;
+		background-color: #0088FE;
+	}
+
+	/* Search bar */
+
+	.searchFind{
+		float:none;
+		padding-left: 0px;
+		width: 100%;
+		border-style: none;
+		
+	}
+	
+	input[type="text"]#findNav::-webkit-input-placeholder {
+	color: transparent;
+	}
+
+	/* Dropdown list */
+
+	.searchSuburb{
+		float:none;
+		padding-left: 0px;
+		margin-top: 10px;
+		width: 100%;
+		border-style: none;
+		border-radius: 25px;
+	}
+
+	/* Search button */
+
+	.searchButton{
+		margin-right: 0px;
+		width: 100%;
+		height: 50px;
+		margin-top: 20px;
+		border-radius: 25px;
+	}
+	
+	.login {
+		margin-left: -140px;
+		margin-top: 75px;
+	}
+	
+	.profile {
+		margin-left: -150px;
+		margin-top: 75px;
+	}
+
+	.signup {
+		margin-left: -32px;
+		margin-top: 75px;
+	}
+	
+	/*********************************************/
+				/* Search Page */
+	/*********************************************/
+
+	#nav a {
+		padding-bottom: 5px;
+		float: left;
+		margin-left: 15px;
+	}
+
+	/* Groups three different bars */
+
+	#form_group1
+	{
+		margin-left: -340px;
+		margin-top: 0px;
+		padding-bottom: 20px;
+		
+		width:260px;
+		height: 25px;
+	}
+	
+	input[type="text"]#find::-webkit-input-placeholder {
+	color: transparent;
+	}
+	
+	#find{
+		width: 220px;
+	}
+	
+	#form_group2
+	{
+		margin-left: -340px;
+		margin-top: 100px;
+		
+		width: 260px;
+		height: 40px;
+	}
+	#form_group3
+	{
+		margin-left: -340px;
+		margin-top: 200px;
+		
+		width: 260px;
+		height: 25px;
+	}
+
+	#search {
+		
+		margin-left: -280px;
+		margin-top: 300px;
+		
+		padding: 10px;
+		width: 150px;
+		
+	}
+
+	
+	/* Logo subtitle */
+
+	#subtitle {
+		
+		position: absolute;
+		margin-left: -360px;
+		margin-top: -120px;
+		white-space:  normal;;
+	}
+
+	/* Logo image configuration */
+
+	#logo img {
+		
+		position: absolute;
+		margin-top: -250px;
+		margin-left: -300px;
+	}
+
+	
+	
+	/*********************************************/
+			/* User Registration Page*/
+	/*********************************************/
+
+	/* Form title */
+	#heading 
+	{
+		text-align: center;
+		max-width:300px;
+		margin-left: -20px;
+		margin-bottom: 40px;
+	}
+		
+
+	/* Removes form border */
+	fieldset[id="form-border"]
+	{
+		border-style: none;
+	}
+
+	/* Form container */
+	#registration
+	{
+		float: none;
+	}
+
+	/* Image size */
+	.image 
+	{
+	   display: none;
+	}
+
+	/* Email and passwords fields */
+	input[name="username"],
+		 [name="signup"], 
+		 [name="email"], 
+		 [name="password"], 
+		 [name="confirm-password"] 
+	{
+	  width: 240px;
+	  height: 40px;
+	  display: block;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	}
+
+	input[type=checkbox] {width:20px; height:20px;}
+	#checkbox 
+	{
+		width: 220px;
+		display: block;
+		padding-left: 1.5em;
+		text-indent: -2.0em;
+	}
+
+	/* Group most of the fields together */
+	#form-group
+	{
+		float: left;
+		margin-left:0px;
+		margin-bottom: 20px;
+	}
+
+	/* To login, click here */
+	#note
+	{
+		float: none;
+		margin-left: 60px;
+	}
+
+	#click
+	{
+		text-decoration: none;
+	}
+
+	/* Register button */
+	input[value="Register"] 
+	{
+		width: 52%;
+		height: 50px;
+		border-radius: 15px;
+		display: block;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	/* Groups form and image together */
+	.registration-content 
+	{
+		padding-top: 20px;
+		padding-bottom: 100px;
+	}
+	
+	/*********************************************/
+			/* Login Page*/
+	/*********************************************/
+	
+	input[value="Login"] 
+	{
+		width:50%;
+		margin-left: 30px;
+	}
+	
+	#login-wrapper h2 {
+	text-align: left;
+	}
+	
+	/*********************************************/
+			/* Profile Page*/
+	/*********************************************/
+	.card{
+		padding-bottom: 200px;
+	}
+}
